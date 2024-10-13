@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images.png"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Chapter 6: HTML Multimedia</title>
+  <style>
+    body {
+      margin: 0; 
+      height: 100%; 
+      background-color: #7f4545a2;  
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat;  
+      background-attachment: fixed;  
+      display: flex;  
+      flex-direction: column;  
+    }
+
+    header {
+      background-color: rgb(125, 148, 134);  
+      color: rgb(154, 65, 21);  
+      text-align: center;  
+      padding: 20px 0;  
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);  /* Set navigation background with opacity */
+      width: 200px;  /* Set fixed width for the navigation bar */
+      padding: 20px;  /* Add padding inside the navigation */
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);  
+      overflow-y: auto;  /* Allow vertical scrolling if content overflows */
+      max-height: 160vh;  /* Set maximum height for the navigation */
+    }
+
+    nav a {
+      display: block;  
+      margin: 10px 0;  /* Add spacing between links */
+      padding: 10px; 
+      color: white;  /* Set link text color */
+      text-decoration: none;  /* Remove underline from links */
+      font-weight: bold;  /* Make link text bold */
+      background-color: #cd0e28;  /* Set link background color */
+      border-radius: 20px;  /* Round the corners of the link */
+      text-align: center;  /* Center align link text */
+      transition: background-color 1s ease;  /* Add transition effect for background color */
+    }
+
+    nav a:hover {
+      background-color: #290707;  /* Change background color on hover */
+    }
+
+    main {
+      flex: 1;  /* Allow main content to grow and fill space */
+      padding: 20px;  /* Add padding around main content */
+      display: flex;  /* Use flexbox for layout in main */
+    }
+
+    .content {
+      flex: 1;  /* Allow content area to grow */
+      padding-left: 20px;  /* Add left padding to content area */
+    }
+
+    footer {
+      text-align: center;  /* Center align footer text */
+      color: white;  /* Set footer text color */
+      background-color: black;  /* Set footer background color */
+      padding: 20px;  /* Add padding inside footer */
+      width: 100%;  /* Set footer width to full */
+    }
+
+    footer p, footer h3 {
+      margin: 5px 0;  /* Add vertical margin to footer elements */
+    }
+
+    .media-content {
+      margin-top: 20px;  /* Add top margin to media content */
+      background-color: rgba(216, 124, 124, 0.8);  
+      padding: 20px;  /* Add padding to media content */
+      border-radius: 10px;  /* Round the corners of media content */
+    }
+
+    .media-content audio, .media-content video {
+      display: block;  /* Display media elements as block */
+      margin: 20px auto;  /* Center media elements and add vertical margin */
+      max-width: 100%;  /* Make media responsive */
+    }
+
+    .media-content p {
+      background-color: blue; 
+      width: fit-content;  
+      color: white; 
+      padding: 10px; 
+      border-radius: 10px;  
+    }
+
+    .quote {
+      background-color: rgba(250, 235, 215, 0.66);  /* Set background color for quotes */
+      padding: 10px;  
+      border-radius: 5px;  
+      margin: 20px 0; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>  
+    <h2>Chapter 6: HTML Multimedia</h2>  
+  </header>
+
+  <div class="wrapper" style="display: flex;"> 
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> 
+      <a href="index.html">HOME</a> 
+      <a href="Chapter1.html">Chapter 1</a>  
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a> 
+      <a href="Chapter4.html">Chapter 4</a> 
+      <a href="Chapter5.html">Chapter 5</a> 
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a> 
+      <a href="Chapter11.html">Chapter 11</a> 
+      <a href="chapter12.html">Chapter 12</a> 
+      <a href="Chapter13.html">Chapter 13</a> 
+      <a href="Chapter14.html">Chapter 14</a> 
+      <a href="Chapter15.html">Chapter 15</a> 
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a> 
+      <a href="Chapter18.html">Chapter 18</a> 
+      <a href="Chapter19.html">Chapter 19</a> 
+      <a href="Chapter20.html">Chapter 20</a> 
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a> 
+    </nav>
+
+    <main>
+      <div class="content">
+        <div class="media-content"> <!-- Container for media elements -->
+          <p>If you like Peter Dosen's commentary, listen to the audio clip below:</p>
+          <audio controls> <!-- Audio player for audio clip -->
+            <source src="plane-safety-instructions-17273.mp3" type="audio/mp3"> <!-- Audio source -->
+            Your browser does not support audio. 
+          </audio>
+
+          <div class="quote"> 
+            <q>It seems like success whenever you're done — Nelson Mandela</q>
+          </div>
+
+          <h3>One of the most thrilling last overs in cricket history</h3> 
+          <h2 style="background-color: brown;">Video below:</h2> 
+          <video controls> <!-- Video player for cricket video -->
+            <source src="Asif.mp4" type="video/mp4"> <!-- Video source -->
+            One of the best last overs in cricket history. 
+          </video>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> 
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p> 
+    <p>Find me on social media:</p> <!-- Social media prompt -->
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank"> <!-- Link to Facebook profile -->
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> <!-- Facebook icon -->
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images.png"> 
+  <link rel="stylesheet" href="style.css"> 
+  <title>Chapter 5: Web Forms</title>
+  <style>
+    body {
+      margin: 0; 
+      height: 100%; 
+      background-image: url('chapter5.jpeg'); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      display: flex; 
+      flex-direction: column; 
+    }
+
+    header {
+      background-color: rgb(181, 124, 27);
+      color: rgb(152, 9, 26); 
+      text-align: center; 
+      padding: 10px 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); 
+      width: 200px;
+      padding: 20px; 
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+      overflow-y: auto;
+      max-height: 100vh; 
+    }
+
+    nav a {
+      display: block; 
+      margin: 10px 0; 
+      padding: 10px; 
+      color: white;
+      text-decoration: none; 
+      font-weight: bold;
+      background-color: #cd0e28; 
+      border-radius: 20px; 
+      text-align: center; 
+      transition: background-color 1s ease;
+    }
+
+    nav a:hover {
+      background-color: #290707;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px; 
+      display: flex;
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center; 
+      color: white; 
+      background-color: black; 
+      padding: 20px; 
+      width: 100%; 
+    }
+
+    footer p, footer h3 {
+      margin: 5px 0; 
+    }
+
+    .form {
+      margin-top: 20px; 
+      background-color: rgba(117, 100, 100, 0.285); 
+      padding: 20px;
+      border-radius: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Chapter 5</h1> <!-- Main title for the chapter -->
+    <h2>Web Forms</h2> <!-- Subtitle for the chapter -->
+  </header>
+
+  <div class="wrapper" style="display: flex;">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> <!-- Section title for navigation -->
+      <a href="index.html">HOME</a>
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a>
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <h3 style="background-color: rgba(202, 172, 133, 0.66);">Please fill out the following form:</h3> <!-- Instruction for form -->
+        <div class="form">
+          <form> <!-- Start of the form -->
+            <label>First Name:</label><br>
+            <input type="text" placeholder="Enter your first name" required><br><br> <!-- First name input -->
+            <label>Last Name:</label><br>
+            <input type="text" placeholder="Enter your last name" required><br><br> <!-- Last name input -->
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email" required><br><br> 
+            <label>Enter Date:</label><br>
+            <input type="date" placeholder="Enter date" required><br><br> <!-- Date input -->
+            <label>Number:</label><br>
+            <input type="number" placeholder="Enter your Number" required><br><br> <!-- Number input -->
+            <label>Password:</label><br>
+            <input type="password" placeholder="Enter your password" required><br><br> <!-- Password input -->
+           
+            <label>Message:</label><br>
+            <textarea placeholder="Enter your message" rows="4" cols="50" required></textarea><br><br> <!-- Message textarea -->
+            <input type="submit" value="Submit"> <!-- Submit button -->
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> 
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p>
+    <p>Find me on social media</p>
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> <!-- Facebook icon -->
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chapter14</title> 
+  <link rel="stylesheet" href="style.css"> <!-- Links to an external stylesheet -->
+  <link rel="icon" href="images.png"> 
+  <style>
+    body {
+      margin: 0; 
+      height: 100%;
+      background-image: url('chapter14.webp');
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+    }
+
+    header {
+      background-color: rgb(14, 107, 56); 
+      color: rgb(100, 41, 9); 
+      text-align: center; 
+      padding: 20px 0; 
+    }
+
+    nav {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      width: 200px; 
+      height: 70%; 
+      background-color: #333; /* Sets navigation background color */
+      padding-top: 20px; /* Adds padding at the top */
+      overflow-y: auto; 
+      margin-bottom: 40px; /* Adds margin below the nav section */
+    }
+
+    nav ul {
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block; 
+      padding: 10px; 
+      color: white; 
+      text-decoration: none; /* Removes underline from links */
+      background-color: #a40d0d; /* Sets link background color */
+      margin-bottom: 5px; 
+      border: 2px solid red hidden; 
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    nav ul li a:hover {
+      background-color: #111; /* Changes background color on hover */
+    }
+
+    .content {
+      margin-left: 220px; /* Adds space for the fixed navigation bar */
+      padding: 20px; 
+    }
+
+    footer {
+      background-color: black; 
+      color: white; /* Sets footer text color */
+      text-align: center; /* Centers text in the footer */
+      padding: 10px 0; 
+      position: relative; 
+      width: 100%; 
+      bottom: 0; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1> 
+    <h2>Chapter14: CSS Box Model</h2> <!-- Subheading for the chapter -->
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">HomePage</a></li> 
+
+      <li><a href="Chapter1.html">Chapter1</a></li> 
+      <li><a href="Chapter2.html">Chapter2</a></li>
+      <li><a href="Chapter3.html">Chapter3</a></li>
+      <li><a href="Chapter4.html">Chapter4</a></li>
+      <li><a href="Chapter5.html">Chapter5</a></li>
+      <li><a href="Chapter6.html">Chapter6</a></li>
+      <li><a href="Chapter7.html">Chapter7</a></li>
+      <li><a href="Chapter11.html">Chapter11</a></li>
+      <li><a href="chapter12.html">Chapter12</a></li>
+      <li><a href="Chapter13.html">Chapter13</a></li>
+      <li><a href="Chapter14.html">Chapter14</a></li> 
+      <li><a href="Chapter15.html">Chapter15</a></li>
+      <li><a href="Chapter16.html">Chapter16</a></li>
+      <li><a href="Chapter17.html">Chapter17</a></li>
+      <li><a href="Chapter18.html">Chapter18</a></li>
+      <li><a href="Chapter19.html">Chapter19</a></li>
+      <li><a href="Chapter20.html">Chapter20</a></li>
+      <li><a href="Chapter21.html">Chapter21</a></li>
+      <li><a href="Chapter22.html">Chapter22</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2 class="box">Box Sizing is the default CSS applied to all HTML elements in our web pages. However, this CSS rule confuses developers since the actual size is not as the "width" and "height" declarations.</h2> <!-- Explanation about box-sizing in CSS -->
+    <div class="order">
+      <p>We have four CSS properties for the top, right, bottom, and left sides:</p>
+      <ul>
+        <li>margin-top</li>
+        <li>margin-right</li>
+        <li>margin-left</li> <!-- Lists three margin properties used in CSS -->
+      </ul>
+    </div>
+    <p style="background: #ad1ea9; width: fit-content;">For More Information</p>
+    <p style="padding-left: 20px; background-color: aqua; width: fit-content;">Click these chapter</p> 
+  </div>
+
+  <footer>
+    <p>&copy; Asif Hossain. All rights reserved.</p> <!-- Footer content -->
+    <p>Student of ASP.NET, Round 61</p> 
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" alt="Facebook" height="20" width="20"> 
+    </a>
+  </footer>
+</body>
+</html>

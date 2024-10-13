@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Learning HTML</title>
+  
+  <link rel="icon" href="images.png">
+
+  <style>
+    /* Apply margin, padding, and box-sizing rules to all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Ensures consistent sizing across all elements */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; /* Column layout: header, main, footer */
+      min-height: 100vh; /* Minimum height set to full view height */
+      background-image: url('asif.avif'); /* Background image */
+      background-size: cover; /* Cover entire body with the image */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* No repeating of the background image */
+    }
+
+    /* Navigation bar styles */
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+      width: 200px; /* Fixed width of the navigation */
+      padding: 20px; /* Padding inside the navigation bar */
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adds shadow effect to the navigation bar */
+      overflow-y: auto; /* Enables scrolling when content exceeds available height */
+      max-height: 90vh; /* Limits height to 90% of the viewport */
+    }
+
+    /* Styling individual links inside the navigation */
+    nav a {
+      display: block; /* Each link takes full width of the container */
+      margin: 10px 0; /* Margin between links */
+      padding: 10px; /* Padding inside each link */
+      color: white; /* White text color for the links */
+      text-decoration: none; /* Remove underline from links */
+      font-weight: bold; /* Make link text bold */
+      background-color: #cd0e28; /* Background color of the links */
+      border-radius: 20px; /* Rounded corners for the links */
+      text-align: center; /* Center the text inside each link */
+      transition: background-color 1s ease; 
+    }
+
+    nav a:hover {
+      background-color: #290707; /* Darker red background on hover */
+    }
+
+    header {
+      width: 100%; /* Full width header */
+      text-align: center; /* Center the text inside the header */
+      color: white; /* White text color */
+      background-color: blueviolet; /*  background color */
+      padding: 15px 0; 
+    }
+
+    main {
+      flex: 1; /* Allows the main section to grow and fill available space */
+      padding: 20px; /* Padding inside the main section */
+      display: flex; /* Flexbox layout for the main section */
+    }
+
+    .content {
+      flex: 1; /* Fill available space with content */
+      padding-left: 20px; /* Padding from the left to create space */
+    }
+
+    /* Footer styles at the bottom of the page */
+    footer {
+      text-align: center; /* Center the footer content */
+      color: white; /* White text color */
+      background-color: black; /* Black background color for the footer */
+      padding: 20px; /* Padding inside the footer */
+      width: 100%; /* Full width footer */
+    }
+
+    footer p, footer h3 {
+      margin: 5px 0; /* Minimal margin between footer elements */
+    }
+
+    /* Wrapper for both nav and main sections */
+    .wrapper {
+      display: flex; 
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome To My Project</h1> <!-- Main title of the webpage -->
+  </header>
+
+  <div class="wrapper">
+    <!-- Navigation bar on the left side of the page -->
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> 
+      
+      <a href="Chapter1.html">Chapter 1</a> 
+      <a href="Chapter2.html">Chapter 2</a> 
+      <a href="Chapter3.html">Chapter 3</a> 
+      <a href="Chapter4.html">Chapter 4</a> 
+      <a href="Chapter5.html">Chapter 5</a> 
+      <a href="Chapter6.html">Chapter 6</a> 
+      <a href="Chapter7.html">Chapter 7</a> 
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a> 
+      <a href="Chapter13.html">Chapter 13</a> 
+      <a href="Chapter14.html">Chapter 14</a> 
+      <a href="Chapter15.html">Chapter 15</a> 
+      <a href="Chapter16.html">Chapter 16</a> 
+      <a href="Chapter17.html">Chapter 17</a> 
+      <a href="Chapter18.html">Chapter 18</a> 
+      <a href="Chapter19.html">Chapter 19</a> 
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a> 
+      <a href="Chapter22.html">Chapter 22</a> 
+    </nav>
+
+    <main>
+      <div class="content">
+        <h1 style="background-color: rgba(250, 235, 215, 0.66);">If You Want to Learn HTML</h1>
+        
+        <p style="background-color: rgba(0, 255, 255, 0.537);">Please click on the links in the navigation bar on the left.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3>
+    <p>Student of ASP.NET</p>
+    <p>Round 61</p>
+
+    <!-- Social media section -->
+    <p>Find me on social media</p>
+    
+    <!-- Facebook profile link with an icon -->
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> <!-- Facebook icon -->
+    </a>
+
+    <!-- Copyright notice -->
+    <p>&copy; Asif, all rights reserved</p>
+  </footer>
+</body>
+</html>

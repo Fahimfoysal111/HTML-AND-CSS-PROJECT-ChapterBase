@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chapter 21</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" href="images.png"> <!-- Adds a favicon for the page -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; /* Arranges the body content vertically */
+      min-height: 100vh; 
+      background-color: rgb(240, 248, 255); 
+      background-image: url(Chapter21.jpg); /* Adds a background image */
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; /* Prevents the background from repeating */
+      background-attachment: fixed; 
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); 
+      width: 200px;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      overflow-y: auto; /* Enables vertical scrolling for nav items */
+      max-height: 90vh; 
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      color: white; 
+      text-decoration: none; /* Removes underline from links */
+      font-weight: bold; /* Makes link text bold */
+      background-color: #cd0e28; 
+      border-radius: 20px; /* Rounds the corners of the navigation links */
+      text-align: center; 
+      transition: background-color 1s ease; 
+    }
+
+    nav a:hover {
+      background-color: #290707; /* Changes background color on hover */
+    }
+
+    header {
+      width: 100%; 
+      text-align: center;
+      color: white;
+      background-color: blueviolet; 
+      padding: 15px 0; /* Adds padding to the header */
+    }
+
+    main {
+      flex: 1;
+      padding: 20px; /* Adds padding to the main content */
+      display: flex; 
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center; /* Centers footer text */
+      color: white;
+      background-color: black; /* Black background for the footer */
+      padding: 20px;
+      width: 100%; 
+    }
+
+    footer p,
+    footer h3 {
+      margin: 5px 0; 
+    }
+
+    .wrapper {
+      display: flex; /* Uses flexbox layout for the wrapper */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Chapter 21</h1> <!-- Main heading for Chapter 21 -->
+    <h2> Advance CSS </h2>
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> 
+      <a href="index.html">Home</a> 
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a>
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a> 
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <h3 style="display: flex;gap: 10px;background-color: rgba(220, 20, 60, 0.817);min-height: calc(100vh-96px);">CSS variables help us:<br>
+          ● makes our CSS code much easier to maintain since we only
+          change the value of one variable, and it will affect wherever
+          the variable used<br>
+          ● makes the code more readable since we use the names of
+          the variables</h3> 
+          <div class="variable">
+            <p class="submit">
+              The CSS counter helps us create automatic numbering outlines
+      without any JavaScript code.<br>
+      ● counter-reset - Creates a counter by giving it a name<br>
+      ● counter-increment - Increments a counter value<br>
+      ● content - Inserts generated content<br>
+      ● counter() function - Adds the value of a counter to an
+      element
+            </p> 
+          </div>
+
+        <p style="background: #c6150f;color: black;">For more   information, click on the chapter </p> 
+      </div>
+    </main>  
+  
+
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> 
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p>
+    <p>Find me on social media</p> 
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank"> 
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> 
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+
+</html>

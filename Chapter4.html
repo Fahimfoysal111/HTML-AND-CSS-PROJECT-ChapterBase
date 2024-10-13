@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images.png">
+    <title>Learning HTML - Chapter 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: aliceblue;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 200px;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        nav a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #cd0e28;
+            border-radius: 20px;
+            text-align: center;
+            transition: background-color 1s ease;
+        }
+
+        nav a:hover {
+            background-color: #290707;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: blueviolet;
+            padding: 15px 0;
+        }
+
+        /* Keyframe animation to add fade-in and scale effect to h1 */
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            animation: fadeInScale 3.5s linear;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+        }
+
+        .content {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer p, footer h3 {
+            margin: 5px 0;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        /* Style for chapter background and header in specific sections */
+        body.chapter {
+            background-image: url('chapter6.jpg');
+            background-attachment: fixed;
+        }
+
+        body.chapter header {
+            background-color: rgb(60, 154, 192);
+            color: rgb(124, 17, 92);
+            text-align: center;
+        }
+
+        q.que {
+            display: block;
+            margin: 20px 0;
+        }
+
+        blockquote {
+            margin: 20px 0;
+        }
+
+        /* Special style for details section background */
+        details {
+            background-color: chartreuse;
+            color: black;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Define dimensions for figure image */
+        figure img {
+            height: 250px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Chapter 4</h1>
+    </header>
+
+    <div class="wrapper">
+        <nav>
+            <h2 style="color: white;">HTML Chapters</h2>
+            <a href="index.html">HOME</a>
+            <a href="Chapter1.html">Chapter 1</a>
+            <a href="Chapter2.html">Chapter 2</a>
+            <a href="Chapter3.html">Chapter 3</a>
+            <a href="Chapter4.html">Chapter 4</a>
+            <a href="Chapter5.html">Chapter 5</a>
+            <a href="Chapter6.html">Chapter 6</a>
+            <a href="Chapter7.html">Chapter 7</a>
+            <a href="Chapter11.html">Chapter 11</a>
+            <a href="chapter12.html">Chapter 12</a>
+            <a href="Chapter13.html">Chapter 13</a>
+            <a href="Chapter14.html">Chapter 14</a>
+            <a href="Chapter15.html">Chapter 15</a>
+            <a href="Chapter16.html">Chapter 16</a>
+            <a href="Chapter17.html">Chapter 17</a>
+            <a href="Chapter18.html">Chapter 18</a>
+            <a href="Chapter19.html">Chapter 19</a>
+            <a href="Chapter20.html">Chapter 20</a>
+            <a href="Chapter21.html">Chapter 21</a>
+            <a href="Chapter22.html">Chapter 22</a>
+        </nav>
+
+        <main>
+            <div class="content">
+                <h1 style="background-color: rgba(250, 235, 215, 0.66);">If You Want to Learn HTML</h1>
+                <p style="background-color: rgba(0, 255, 255, 0.537);">Please click on the links in the navigation bar on the left.</p>
+
+                <header class="chapter">
+                    <h2>Chapter 4: CSS Basics</h2>
+                </header>
+                <!-- Blockquote with CSS quote -->
+                <q class="que">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</q>
+                <blockquote>Don't watch the clock; do what it does. Keep going.</blockquote>
+                <!-- Details section to hide/show content -->
+                <details>
+                    <summary>About CSS</summary>
+                    <p>CSS is used to style web pages and make them look more appealing.</p>
+                </details>
+
+                <figure>
+                    <img src="Pat Cummins.jpg" alt="Patcummins">
+                    <!-- Caption for the figure image -->
+                    <figcaption style="background-color: azure;">CSS Illustration</figcaption>
+                </figure>
+                <p style="background-color: darkblue; color: darkgoldenrod;">This is my <em>first project about CSS</em></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h3>Asif Hossain</h3>
+        <p>Student of ASP.NET</p>
+        <p>Round 61</p>
+        <p>Find me on social media</p>
+        <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+            <img src="images (1).png" height="20" width="20" alt="Facebook">
+        </a>
+        <p>&copy; Asif, all rights reserved</p>
+    </footer>
+</body>
+</html>

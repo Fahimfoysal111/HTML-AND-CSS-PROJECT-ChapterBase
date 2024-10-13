@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chapter 19</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" href="images.png"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; 
+      min-height: 100vh; 
+      background-color: rgb(240, 248, 255); /* Light background color */
+      background-image: url('Chapter19.avif'); /* Sets background image */
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); 
+      width: 200px;
+      padding: 20px; 
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+      overflow-y: auto; 
+      max-height: 140vh;
+    }
+
+    nav a {
+      display: block; 
+      margin: 10px 0;
+      padding: 10px;
+      color: white; 
+      text-decoration: none; 
+      font-weight: bold; /* Makes text bold */
+      background-color: #cd0e28; 
+      border-radius: 20px; 
+      text-align: center; 
+      transition: background-color 1s ease; 
+    }
+
+    nav a:hover {
+      background-color: #290707; /* Darker red color when hovering over links */
+    }
+
+    header {
+      width: 100%; /* Full width for header */
+      text-align: center; /* Centers the text in the header */
+      color: white;
+      background-color: blueviolet; /* Sets background color of the header */
+      padding: 15px 0; /* Adds padding to the header */
+    }
+
+    main {
+      flex: 1;
+      padding: 20px; /* Adds padding around the main content */
+      display: flex; /* Flexbox layout for the main content */
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px; /* Adds padding to the content section */
+    }
+
+    footer {
+      text-align: center; /* Centers text in the footer */
+      color: white;
+      background-color: black; /* Black background for footer */
+      padding: 20px;
+      width: 100%; /* Footer spans full width */
+    }
+
+    footer p,
+    footer h3 {
+      margin: 5px 0; /* Small margin for footer text */
+    }
+
+    .wrapper {
+      display: flex; /* Flexbox layout for wrapper container */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Chapter 19</h1> <!-- Main heading of the page -->
+    <h2>CSS Layout</h2> 
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> 
+      <a href="index.html">Home</a> 
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a> 
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <div class="parents">
+          <h2 class="normal">
+          The layout is the way HTML elements are placed on a web page. 
+      We often use CSS to build a design by arranging the elements into
+      our preferred visual structure.
+        </h2>
+        <h3 class="relative">
+          The default value of the CSS “ position ” property is “ static .” 
+      The element is placed where it should be inside the web page
+      according to its order in the HTML code.An element with “ position: relative ” is relative to its normal
+      position. We use the top, right, bottom , and left properties to
+      set the elements position.
+        </h3>
+        </div>
+        <div class="contai">
+        <div class="absolute child z-index-minus-two">Asif Hossain</div> 
+      <div class="absolute child z-index-minus-one">Student of</div>
+      <div class="absolute child z-index-zero">ASP.Net</div>
+      <div class="absolute child z-index-one">Round 61</div>
+      
+      </div>  
+      <div class="flex-container">
+        <div class="flex-item item1">A flexible box or flexbox ensures that elements behave
+          predictably</div> 
+        <div class="flex-item item2"> when the page layout must accommodate different
+          screen sizes and display devices</div>
+        <div class="flex-item item3">Inside a flex container, there are one or more flex items. Flex
+          items are positioned inside a flex container along a flex line</div> 
+
+        <p style="background: #c6150f;color: black;">For more   information, click on the chapter </p> <!-- Footer call-to-action -->
+      </div>
+    </main>  
+  
+
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> 
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p>
+    <p>Find me on social media</p> 
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> 
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+
+</html>

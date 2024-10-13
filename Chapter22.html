@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chapter 22</title> 
+  <link rel="stylesheet" href="style.css"> <!-- Links to external stylesheet -->
+  <link rel="icon" href="images.png"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; 
+      min-height: 100vh; 
+      background-color: rgb(240, 248, 255); /* Light blue background color */
+      background-image: url(Chapter22.webp); /* Background image for the body */
+      background-size: cover; 
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); 
+      width: 200px;
+      padding: 20px; 
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+      overflow-y: auto; 
+      max-height: 120vh; 
+    }
+
+    nav a {
+      display: block; /* Displays each link as a block element */
+      margin: 10px 0;
+      padding: 10px;
+      color: white; 
+      text-decoration: none; /* Removes the underline from the links */
+      font-weight: bold; /* Makes link text bold */
+      background-color: #cd0e28; 
+      border-radius: 20px; 
+      text-align: center; 
+      transition: background-color 1s ease; 
+    }
+
+    nav a:hover {
+      background-color: #290707; 
+    }
+
+    header {
+      width: 100%; 
+      text-align: center; 
+      color: white;
+      background-color: rgb(51, 38, 63); 
+      padding: 15px 0; 
+    }
+
+    main {
+      flex: 1;
+      padding: 20px; 
+      display: flex; 
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px; 
+    }
+
+    footer {
+      text-align: center; /* Centers footer content */
+      color: white;
+      background-color: black; 
+      padding: 20px;
+      width: 100%; 
+    }
+
+    footer p,
+    footer h3 {
+      margin: 5px 0; 
+    }
+
+    .wrapper {
+      display: flex; 
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <marquee behavior="scroll" direction="padding-left" scrollamount="10">
+      <h1>Welcome Chapter 22</h1> 
+    </marquee>
+   <h2 style="animation: alternate-reverse; background-color: darkblue;">Chapter22:Responsive CSS</h2>
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> 
+      <a href="index.html">Home</a> 
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a>
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <h2 class="response" style="margin-top: 9px;padding: 9PX;">Responsive Web Design</h2> 
+        <p class="response" style="background-color: rgba(255, 248, 220, 0.635);text-align: center;">Web pages can be viewed
+          using many devices: desktops,
+          tablets, phones, etc. Your web page should look good and be easy
+          to use, regardless of the device. Responsive web design (RWD)
+          can be done using only HTML and CSS</p> <!-- Explanation of responsive web design -->
+    
+      
+      <div class="pat">
+        <figure>
+          <img src="Pat Cummins.jpg" alt="pat cummins" height:650px width="300px"> 
+          <figcaption style="color: antiquewhite;">The winner captain of 2023 world cup</figcaption> 
+        </figure>
+      </div>
+
+        <p style="background: #c6150f;color: black;">For more   information, click on the chapter </p> 
+      </div>
+    </main>  
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> 
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p>
+    <p>Find me on social media</p> 
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank"> 
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> 
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+
+</html>

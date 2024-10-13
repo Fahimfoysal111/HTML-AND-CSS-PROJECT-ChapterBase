@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chapter 16</title> <!-- Page title -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+  <link rel="icon" href="images.png"> <!-- Favicon for the page -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    body {
+      display: flex; /* Flexbox layout for the body */
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: rgb(240, 248, 255);
+      background-image: url('Chapter15.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); /* Navigation background */
+      width: 200px;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adds a shadow to the nav */
+      overflow-y: auto; /* Scrollable navigation */
+      max-height: 90vh;
+    }
+
+    nav a {
+      display: block; /* Make the links behave as block elements */
+      margin: 10px 0;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #cd0e28;
+      border-radius: 20px; /* Rounds the link corners */
+      text-align: center;
+      transition: background-color 1s ease; /* Smooth color transition on hover */
+    }
+
+    nav a:hover {
+      background-color: #290707; /* Changes link color on hover */
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: blueviolet;
+      padding: 15px 0; /* Adds padding to the header */
+    }
+
+    main {
+      flex: 1;
+      padding: 20px; /* Adds padding to the main content */
+      display: flex;
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px; /* Left padding for content section */
+    }
+
+    footer {
+      text-align: center; /* Center-aligns footer content */
+      color: white;
+      background-color: black;
+      padding: 20px;
+      width: 100%;
+    }
+
+    footer p,
+    footer h3 {
+      margin: 5px 0;
+    }
+
+    .wrapper {
+      display: flex; /* Flexbox layout for wrapper */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Chapter 16</h1> <!-- Main header -->
+    <h2>Chapter16:CSS Text</h2> <!-- Subheader for chapter -->
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2> <!-- Styled title for the navigation -->
+      <a href="index.html">Home</a>
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a>
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <p style="color: rgb(226, 192, 214); background-color: rgb(71, 74, 4); font-size: 20px;background: #c6150f;">
+          The “ text-decoration-line ” property adds a decoration line to the text. Its value can be:<br>
+          ● underline - draw a line under the text<br>
+          ● line-through - draw a line through the text<br>
+          ● overline - draw a line over the text
+        </p>
+      
+        <h4 style="padding: 40px; backdrop-filter: 20px;background-color: tomato;">We can combine more than one value of the “text-decoration line” property in a CSS declaration, like the following example.</h4>
+        
+        <h4 style="padding: 40px; padding-left: 20px; text-decoration:underline;text-decoration-color: aquamarine;border: 3px solid blueviolet;border-color: #c6150f;background-color: blueviolet; border-style:groove; border-radius: 70px; height: fit-content;width: fit-content;font-weight:1000;font-size: 20px;text-decoration-thickness: 5px; text-decoration-style: dotted;">
+          The “ text-decoration-color ” property sets the color of the decoration line.
+        </h4>
+
+        <h3 style="background-color: violet; word-break: break-all; border: 4px solid grey; border-radius: 20px;height: fit-content;width: fit-content;">
+          The “ word-break ” property specifies line-breaking rules. This property can have values like keep-all, break-word, break-all.
+        </h3><br>
+        <p style="background: #c6150f;color: black;">For more information, click on the chapter </p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3> <!-- Footer name -->
+    <p>Student of ASP.NET</p> <!-- Student information -->
+    <p>Round 61</p>
+    <p>Find me on social media</p>
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank"> <!-- Facebook link -->
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> <!-- Social media icon -->
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright statement -->
+  </footer>
+</body>
+
+</html>

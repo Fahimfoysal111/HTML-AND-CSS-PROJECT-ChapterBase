@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11</title>
+  <link rel="icon" href="images.png"> 
+  <style>
+    * {
+      margin: 0; 
+      padding: 0; /* Resets padding for all elements */
+      box-sizing: border-box; 
+    }
+
+    body {
+      font-family: Arial, sans-serif; 
+      background-image: url('chapter11.jpeg'); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; /* Fixes the background image in place */
+      margin: 0; /* Resets margin for body */
+    }
+
+    header {
+      background-color: rgb(60, 154, 192); 
+      color: white; 
+      text-align: center; 
+      padding: 20px 0; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    nav {
+      background-color: rgba(43, 68, 77, 0.7); 
+      padding: 15px;
+      width: 200px; 
+      position: fixed; 
+      top: 0;
+      left: 0; 
+      height: 100%; 
+      overflow-y: auto; 
+    }
+
+    nav ul {
+      list-style-type: none; 
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 10px; 
+    }
+
+    nav ul li a {
+      color: white; /* Link text color */
+      text-decoration: none; /* Removes underline from links */
+      padding: 10px 20px; 
+      background-color: rgb(148, 14, 25); 
+      display: block; /* Makes the link a block element */
+      border-radius: 50px; 
+      transition: background-color 0.3s, transform 0.3s; 
+    }
+
+    nav ul li a:hover {
+      background-color: chartreuse; /* Changes background color on hover */
+      color: black; /* Changes text color on hover */
+      transform: scale(1.1); /* Slightly enlarges the link on hover */
+    }
+
+    .content {
+      margin-left: 220px; /* Creates space for the fixed navigation */
+      padding: 20px; /* Padding for the content area */
+      color: white; /* Text color for content */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for content */
+      margin-top: 20px; /* Adds top margin to content */
+      border-radius: 100px; /* Rounds the corners of the content area */
+      border: 5px solid rgb(12, 95, 121); /* Border for content area */
+    }
+
+    footer {
+      background-color: rgb(13, 14, 14); 
+      text-align: center;
+      padding: 10px; /* Padding for footer */
+      position: fixed; /* Fixes the footer to the bottom */
+      bottom: 0; 
+      width: 100%; /* Full width for footer */
+      color: white; /* Footer text color */
+    }
+
+    footer .social-icons {
+      display: flex; /* Uses flexbox for social icons */
+      justify-content: center; /* Centers social icons */
+      margin-top: 10px; /* Adds margin above social icons */
+    }
+
+    footer .social-icons a {
+      margin: 0 10px; /* Margin between social icons */
+    }
+
+    footer .social-icons img {
+      width: 20px; /* Width of social media icons */
+      height: 20px; /* Height of social media icons */
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome</h1>
+    <h2>Chapter 11: Getting to know CSS</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="Chapter1.html">Chapter 1</a></li>
+      <li><a href="Chapter2.html">Chapter 2</a></li>
+      <li><a href="Chapter3.html">Chapter 3</a></li>
+      <li><a href="Chapter4.html">Chapter 4</a></li>
+      <li><a href="Chapter5.html">Chapter 5</a></li>
+      <li><a href="Chapter6.html">Chapter 6</a></li>
+      <li><a href="Chapter7.html">Chapter 7</a></li>
+      <li><a href="Chapter11.html">Chapter 11</a></li>
+      <li><a href="Chapter12.html">Chapter 12</a></li>
+      <li><a href="Chapter13.html">Chapter 13</a></li>
+      <li><a href="Chapter14.html">Chapter 14</a></li>
+      <li><a href="Chapter15.html">Chapter 15</a></li>
+      <li><a href="Chapter16.html">Chapter 16</a></li>
+      <li><a href="Chapter17.html">Chapter 17</a></li>
+      <li><a href="Chapter18.html">Chapter 18</a></li>
+      <li><a href="Chapter19.html">Chapter 19</a></li>
+      <li><a href="Chapter20.html">Chapter 20</a></li>
+      <li><a href="Chapter21.html">Chapter 21</a></li>
+      <li><a href="Chapter22.html">Chapter 22</a></li>
+      <li><a href="Chapter21.html">Chapter 21</a>
+      </li>
+      <li> <a href="Chapter22.html">Chapter 22</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Hi, I am Fahim Foysal Asif</h1>
+    <p>I am 22 years old and currently learning about HTML and CSS.</p><br> 
+    <p>For more information, visit the Chapter.</p>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3>
+    <p>Student of ASP.NET, Round 61</p>
+    <p>Find me on social media:</p>
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" height="20" width="20" alt="Facebook">
+    </a>
+    <p>&copy; Asif, all rights reserved</p>
+  </footer>
+
+</body>
+</html>

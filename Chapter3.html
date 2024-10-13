@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> <!-- Specifies character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>3rd Chapter</title> <!-- Page title -->
+  <link rel="icon" href="images.png"> <!-- Favicon for browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Links external CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; 
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); 
+      width: 200px;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #cd0e28;  
+      border-radius: 20px;
+      text-align: center;
+      transition: background-color 1s ease;
+    }
+
+    nav a:hover {
+      background-color: #290707; 
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: blueviolet; 
+      padding: 15px 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 20px; 
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      background-color: black; 
+      padding: 20px;
+      width: 100%;
+    }
+
+    footer p, footer h3 {
+      margin: 5px 0;
+    }
+
+    .wrapper {
+      display: flex; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <h2>Chapter 3: HTML Styles</h2>
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <h2 style="color: white;">HTML Chapters</h2>
+      <a href="index.html">HOME</a> <!-- Home page link -->
+      <a href="Chapter1.html">Chapter 1</a>
+      <a href="Chapter2.html">Chapter 2</a>
+      <a href="Chapter3.html">Chapter 3</a>
+      <a href="Chapter4.html">Chapter 4</a>
+      <a href="Chapter5.html">Chapter 5</a>
+      <a href="Chapter6.html">Chapter 6</a>
+      <a href="Chapter7.html">Chapter 7</a>
+      <a href="Chapter11.html">Chapter 11</a>
+      <a href="chapter12.html">Chapter 12</a>
+      <a href="Chapter13.html">Chapter 13</a>
+      <a href="Chapter14.html">Chapter 14</a>
+      <a href="Chapter15.html">Chapter 15</a>
+      <a href="Chapter16.html">Chapter 16</a>
+      <a href="Chapter17.html">Chapter 17</a>
+      <a href="Chapter18.html">Chapter 18</a>
+      <a href="Chapter19.html">Chapter 19</a>
+      <a href="Chapter20.html">Chapter 20</a>
+      <a href="Chapter21.html">Chapter 21</a>
+      <a href="Chapter22.html">Chapter 22</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <p class="c3">This is a <i>Head</i></p> <!-- Italic text example -->
+        <figure>
+          <img src="Head.jpg" alt="Head" height="200" width="120"> <!-- Image and alt attribute -->
+          <figcaption style="background-color: deepskyblue;color: black;height: fit-content;width: fit-content;">Travis head 100 against India</figcaption> <!-- Caption for image -->
+        </figure>
+        <p class="best">This is one of the <u>best</u> innings in her life.</p> <!-- Underlined text -->
+        <p class="capa">We all know her <mark>Capability</mark>.</p> <!-- Highlighted text -->
+        <div class="sub">
+          <p>This is a <sub>Bat</sub></p> <!-- Subscript example -->
+          <p>This is a <sup>ball</sup></p> <!-- Superscript example -->
+        </div>
+        <p>For More Information</p>
+        <p style="background-color: rgb(167, 160, 151);height: fit-content;width: fit-content;">visit chapter</p> <!-- Additional info styling -->
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Asif Hossain</h3>
+    <p>Student of ASP.NET</p> 
+    <p>Round 61</p>
+    <p>Find me on social media</p>
+    <a href="https://www.facebook.com/profile.php?id=100082051366823" target="_blank">
+      <img src="images (1).png" height="20" width="20" alt="Facebook"> <!-- Social media icon -->
+    </a>
+    <p>&copy; Asif, all rights reserved</p> <!-- Copyright notice -->
+  </footer>
+</body>
+</html>
