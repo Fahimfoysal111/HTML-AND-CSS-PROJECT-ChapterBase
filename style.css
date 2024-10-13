@@ -1,0 +1,660 @@
+.content {
+  background-color: rgba(35, 9, 9, 0.614); 
+  width: 1000px; 
+  height: 100%; /* Full height */
+  color: aliceblue; /* Text color */
+}
+
+header {
+  width: 100%; 
+  text-align: center; /* Center-align text */
+  color: white;
+  background-color: blueviolet; /* Background color for header */
+  padding: 15px 0; 
+  animation: fadeSlideIn 3s ease-in-out forwards; 
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* Move header up */
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY('angle')(0); 
+  }
+  100% {
+    opacity: 1; 
+    transform: translateY(0); /* Reset position */
+  }
+}
+
+.circle-shape circle {
+  stroke: green;
+  stroke-width: 4; /* Outline thickness */
+  fill: yellow; 
+}
+
+.rect-shape rect {
+  stroke: blue; /* Blue outline for rectangles */
+  stroke-width: 4; 
+  fill: lightblue; 
+}
+
+.ellipse-shape ellipse {
+  stroke: purple; 
+  stroke-width: 4; /* Outline thickness */
+  fill: pink; 
+}
+
+@keyframes headerAnimation {
+  0% { background-color: rgb(60, 154, 192); } 
+  100% { background-color: rgb(124, 17, 92); } 
+}
+
+.content h2 {
+  background-color: #c6150f; 
+  color: white; /* Text color for h2 headings */
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.content p {
+  margin-bottom: 15px; 
+}
+
+.content .tab-instruction {
+  background-color: darkgoldenrod; 
+  padding: 10px; 
+  border-radius: 5px; 
+  width: fit-content; 
+  height: fit-content; 
+}
+
+button {
+  padding: 10px 20px; 
+  background-color: #28a745; 
+  color: white; /* Text color for buttons */
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-bottom: 20px;
+}
+
+.size {
+  margin-top: 20px; 
+}
+
+.size p {
+  margin-bottom: 10px; 
+}
+
+input[type="text"] {
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  width: 250px; 
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+
+.more-info {
+  background-color: #c6150f; 
+  color: burlywood; 
+  padding: 10px; 
+  border-radius: 5px; 
+  width: fit-content; 
+  height: fit-content; 
+}
+
+.visit-info {
+  background-color: rgb(22, 6, 51); 
+  padding: 10px; 
+  border-radius: 5px; 
+  width: fit-content; 
+  height: fit-content; 
+}
+
+.color-text {
+  color: #ff4500; 
+  background-color: #f0f8ff; 
+  border-radius: 5px; 
+}
+
+.color-border {
+  border: 3px solid #4682b4; 
+  /* Padding for internal spacing */
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #ff6347, #4682b4); 
+  color: white; 
+  padding: 20px; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.text-shadow {
+  color: #32cd32; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.semi-transparent {
+  background-color: rgba(0, 128, 128, 0.7); 
+  padding: 15px; 
+  color: white;   
+  border-radius: 10px; 
+}
+
+.hover-effect {
+  background-color: #20b2aa; 
+  color: white; 
+  padding: 10px; 
+  /* Rounded corners */
+  border-radius: 5px; 
+  transition: background-color 0.5s ease; 
+}
+
+.hover-effect:hover {
+  background-color: #3a8440; 
+  color: #fff; 
+}
+
+p {
+  font-size: 18px; 
+  /* Text color for paragraphs */
+  color: #333; 
+  margin: 20px 0; 
+  line-height: 1.6; 
+}
+
+.proper {
+  /* Display inline-block for layout */
+  display: inline-block; 
+  background-color: #e6f7ff; 
+  padding: 10px 15px; 
+  /* Margin for spacing between elements */
+  margin-right: 10px; 
+  border: 2px solid #0b84a5; 
+  border-radius: 10px; 
+  text-align: left; 
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.child {
+  /* Font size for child elements */
+  font-size: 18px; 
+  color: #4a4a4a; 
+  padding: 15px; 
+  background-color: #f0f0f0; 
+  border: 2px solid #ccc; 
+  /* Rounded corners */
+  border-radius: 8px; 
+  overflow: hidden; 
+  /* Slightly transparent for layering effect */
+  opacity: 0.8; 
+  margin-bottom: 20px; 
+}
+
+.shadow {
+  font-size: 24px; 
+  /* Dark gray text color */
+  color: #333; 
+  /* Text shadow for visual effect */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+  /* Margin for spacing below */
+  margin-bottom: 20px; 
+  text-shadow: #0b84a5; 
+  background-color: #32cd32; 
+}
+
+.newspaper {
+  font-size: 16px; 
+  color: #333; 
+  /* Line height for better readability */
+  line-height: 1.8; 
+  padding: 20px; 
+  /* White background color */
+  background-color: #fff; 
+  /* Two-column layout */
+  column-count: 2; 
+  column-gap: 30px; 
+  column-rule: 2px solid #e0e0e0; 
+  text-align: justify; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.parents {
+  padding: 20px; 
+  margin-bottom: 20px; 
+  background-color: #f4f4f4; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+}
+
+.normal {
+  /* Font size for standard text */
+  font-size: 20px; 
+  color: #333; 
+  line-height: 1.5; 
+  margin-bottom: 15px; 
+}
+
+.relative {
+  font-size: 18px; 
+  color: #555; 
+  position: relative; 
+  top: 10px; 
+  left: 10px; 
+  background-color: #e7f2ff; 
+  padding: 10px; 
+  border-radius: 6px; 
+}
+
+
+.contai {
+  position: relative;
+  height: 200px;
+  background-color: #f0f0f0;
+  /* Spacing below the container */
+  margin-bottom: 20px;
+  /* Padding for internal spacing */
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.absolute {
+  position: absolute;
+  /* Positioned at the top-left corner */
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+.z-index-minus-two {
+  /* Set z-index to -2 (behind other elements) */
+  z-index: -2;
+  /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.z-index-minus-one {
+  /* Set z-index to -1 (behind default layer) */
+  z-index: -1;
+  /* Positioned 30px from the top */
+  top: 30px;
+  /* Darker semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.z-index-zero {
+  z-index: 0;
+  /* Positioned 60px from the top */
+  top: 60px;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.z-index-one {
+  /* Higher z-index (in front) */
+  z-index: 1;
+  /* Positioned 90px from the top */
+  top: 90px;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.flex-container {
+  display: flex;
+  /* Space between items */
+  justify-content: space-around;
+  /* Light gray background color */
+  background-color: #f8f9fa;
+  /* Padding for internal spacing */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.flex-item {
+  /* Flexible width for items */
+  flex: 1;
+  margin: 10px;
+  /* Padding for internal spacing */
+  padding: 15px;
+  /* Blue background color */
+  background-color: #007bff;
+  /* White text for contrast */
+  color: white;
+  /* Center-aligned text */
+  text-align: center;
+  border-radius: 5px;
+  /* Font size and line height for readability */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.item1 {
+  background-color: #6c757d;
+}
+
+.item2 {
+  /* Green background color for item 2 */
+  background-color: #28a745;
+}
+
+.item3 {
+  /* Yellow background color for item 3 */
+  background-color: #ffc107;
+}
+
+.Tran {
+  width: 100px;
+  height: 250px;
+  /* White text color */
+  color: white;
+  /* Green background color */
+  background-color: rgb(0, 128, 96);
+  /* Flexbox for centering content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 2s, height 2s, transform 2s;
+  /* Animation with keyframes */
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.Tran:hover {
+  width: 300px;
+  height: 100px;
+  /* Skew transformation on hover */
+  transform: skewX(20deg); 
+}
+
+@keyframes myanimation {
+  /* Start with a yellow-green color */
+  0% {
+      background-color: rgb(182, 182, 47);
+  }
+  /* Change to dark purple */
+  25% {
+      background-color: rgb(41, 21, 129);
+  }
+  /* Change to dark red */
+  50% {
+      background-color: rgb(199, 33, 55);
+  }
+  /* End with a bright green */
+  100% {
+      background-color: rgb(28, 196, 78);
+  }
+}
+
+.trans {
+  /* Initial height and width */
+  height: 230px;
+  width: 100px;
+  /* White-pinkish text color */
+  color: rgb(245, 225, 235);
+  /* Dark blue background */
+  background: rgb(8, 31, 86);
+  /* Transition on width */
+  transition: width 2s;
+  /* Height transition (with syntax issue here) */
+  height: 4s; 
+  transform: 2s;
+}
+
+.trans:hover {
+  /* Expand width and shrink height on hover */
+  width: 300px;
+  height: 100px;
+  /* 3D translation (incorrect syntax, no value specified) */
+  transform: translate3d(100%);
+}
+
+
+@keyframes myanimation {
+  /* Start with a deep blue color */
+  0% {
+    background-color: rgb(13, 42, 186);
+  }
+  /* Change to a bright red color */
+  25% {
+    background-color: rgb(180, 12, 12);
+  }
+  /* Transition to a deep pink color */
+  50% {
+    background-color: rgb(152, 7, 104);
+  }
+  /* End with a dark green color */
+  100% {
+    background-color: rgb(12, 90, 38);
+  }
+}
+
+.trans
+{
+width: 100px; 
+height: 250px;
+background-color: rgb(2, 15, 12);
+animation-name: myanimation;
+animation-duration: 2s;
+animation-iteration-count: 80;
+}
+.requeired::after
+{
+content:"*" ;
+color: red;
+}
+.size
+{
+color: cornsilk;
+}
+.Tran {
+  width: 100px;
+  height: 250px;
+  color: white;
+  background-color: rgb(0, 128, 96);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 2s, height 2s, transform 2s;
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.Tran:hover {
+  width: 300px;
+  height: 100px;
+  transform: skewX(20deg);
+}
+
+@keyframes myanimation {
+  0% {
+      background-color: rgb(182, 182, 47);
+  }
+  25% {
+      background-color: rgb(41, 21, 129);
+  }
+  50% {
+      background-color: rgb(199, 33, 55);
+  }
+  100% {
+      background-color: rgb(28, 196, 78);
+  }
+}
+
+.Tran {
+  width: 100px;
+  height: 250px;
+  color: white;
+  background-color: rgb(0, 128, 96);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  transition: width 2s, height 2s, transform 2s; 
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.Tran:hover {
+  width: 300px;
+  height: 100px;
+  transform: skewX(20deg); 
+}
+
+/* Keyframe animation */
+@keyframes myanimation {
+  0% {
+      background-color: rgb(182, 182, 47);
+  }
+  25% {
+      background-color: rgb(41, 21, 129);
+  }
+  50% {
+      background-color: rgb(199, 33, 55);
+  }
+  100% {
+      background-color: rgb(28, 196, 78);
+  }
+}
+
+.trans {
+  margin-left: 400px;
+  height: 230px;
+  width: 100px;
+  color: rgb(245, 225, 235);
+  background: rgb(8, 31, 86);
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  transition: width 2s, height 4s, transform 2s; 
+}
+
+.trans:hover {
+  width: 300px;
+  height: 100px;
+  transform: translate3d(100%);
+}
+
+@keyframes myanimation {
+  0% {
+      background-color: rgb(13, 42, 186);
+  }
+  25% {
+      background-color: rgb(180, 12, 12);
+  }
+  50% {
+      background-color: rgb(152, 7, 104);
+  }
+  100% {
+      background-color: rgb(12, 90, 38);
+  }
+}
+.variable {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-left: 5px solid crimson; 
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.submit {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 10px;
+  background-color: rgba(41, 21, 129, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+:root {
+  /* Define a main background color*/
+  --main-bg-color: rgba(220, 20, 60, 0.817);
+  /* Define a highlight color */
+  --highlight-color: crimson;
+  --text-color: #333;
+}
+
+.variable {
+  /* Set the left border color to the highlight color */
+  border-left-color: var(--highlight-color);
+}
+
+.submit {
+  color: var(--text-color);
+}
+
+.response {
+  margin-top: 9px;
+  padding: 9px;
+  background-color: rgba(255, 248, 220, 0.635);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 5px;
+}
+
+.pat figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.pat img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pat figcaption {
+  margin-top: 10px;
+  color: antiquewhite;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+@media screen and(max-width:400px) {
+  .response {
+    /* Change background color to brown */
+    background-color: brown;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Apply styles when the screen width is 800px or less */
+  .response {
+    /* Change background color to yellowgreen */
+    background-color: yellowgreen;
+  }
+}
+
+@media screen and (mar-width:1300px) {
+  .parent {
+    /* Change background color to blue */
+    background-color: blue;
+  }
+}
